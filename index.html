@@ -7,13 +7,12 @@
 <body>
     <div>
         <p>Feet to meters</p>
-        <input type="number" id="feet" placeholder="feet" value="" oninput="feetToMeters()">
+        <input type="number" id="feet" placeholder="number" value="" oninput="convertUnits()">
+        <select id="units">
+            <option value="0.305">Feet -> Meters</option>
+            <option value="3.279">Meters -> Feet</option>
+        </select>
         <p id="resultMeters"></p>
-    </div>
-    <div>
-        <p>Meters to feet</p>
-        <input type="number" id="meters" placeholder="feet" value="" oninput="metersToFeet()">
-        <p id="resultFeet"></p>
     </div>
     <script src="convertUnits.js"></script>
 </body>
